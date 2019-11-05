@@ -2,22 +2,31 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
-    "outDir": "./dist/out-tsc",
-    "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
     "experimentalDecorators": true,
-    "module": "esnext",
-    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": false,
     "importHelpers": true,
-    "target": "es2015",
-    "typeRoots": [
-      "node_modules/@types"
-    ],
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "newLine": "lf",
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "outDir": "./dist",
+    "paths": {
+        "@auth/*": ["src/app/core/auth/*"],
+        "@core/*": ["src/app/core/*"],
+        "@features/*": ["src/app/features/*"],
+        "@interfaces": ["src/app/app.interfaces"],
+        "@store/*": ["src/app/store/*"],
+        "content/*": ["src/content/*"]
+    },
+    "sourceMap": true,
+    "target": "es2015"
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

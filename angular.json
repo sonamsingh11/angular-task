@@ -30,6 +30,9 @@
             "styles": [
               "src/styles.less"
             ],
+            "stylePreprocessorOptions": {
+                "includePaths": ["src/less"]
+            },
             "scripts": []
           },
           "configurations": {
@@ -67,7 +70,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-task:build"
+            "browserTarget": "angular-task:build",
+            "port": 8888
           },
           "configurations": {
             "production": {

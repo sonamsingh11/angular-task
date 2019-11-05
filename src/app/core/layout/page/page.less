@@ -1,0 +1,39 @@
+@import 'utils/index';
+
+.header-wrapper {
+    height: @headerHeight;
+    border-bottom: solid 1px @colorBorder;
+}
+
+.page-wrapper {
+    min-height: calc(100vh - @headerHeight + 1px);
+    position: relative;
+    overflow: auto;
+    transition: opacity .25s ease-in;
+    opacity: 1;
+}
+
+:host-context(.loading) .page-wrapper {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    transition: opacity .25s ease-out;
+    opacity: 0;
+}
+
+:host-context(.loading) .page {
+    width: 100vw;
+    height: 100vh;
+
+    .relative();
+    &::before {
+        content: '';
+        z-index: 1;
+        width: 80px;
+        height: 80px;
+        transform: translate(50%, -50%);
+        background: no-repeat center/contain url(/content/img/spinner.svg);
+
+        .absolute(50%, 50%);
+    }
+}

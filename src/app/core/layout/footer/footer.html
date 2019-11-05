@@ -1,0 +1,26 @@
+<div class="footer">
+    <nav class="footer-nav">
+        <a routerLink="/">Home</a>
+        <a href="http://www.crexi.com/web/about-us/">About CREXi</a>
+        <a href="http://www.crexi.com/web/blog/">Blog</a>
+        <a href="https://learn.crexi.com">Help</a>
+    </nav>
+    <div itemscope="itemscope" itemtype="https://schema.org/Organization" class="social">
+        <a href="{{linkedInUri}}" itemprop="sameAs"><span class="fab fa-linkedin"></span></a>
+        <a href="{{facebookUri}}" itemprop="sameAs"><span class="fab fa-facebook-f"></span></a>
+        <a href="{{twitterUri}}" itemprop="sameAs"><span class="fab fa-twitter"></span></a>
+        <a href="{{gramUri}}" itemprop="sameAs"><span class="fab fa-instagram"></span></a>
+    </div>
+    <section class="spacer"></section>
+</div>
+<div class="footer-bottom">
+    <div class="copyright">
+        <span>© {{date | amDateFormat : 'YYYY'}} Commercial Real Estate Exchange. Inc.</span>
+        <span>&nbsp;All Rights Reserved.</span>
+    </div>
+    <div class="links">
+        <a routerLink="#">Terms &amp; Conditions</a>
+        <a routerLink="#">Privacy Policy</a>
+        <a href="https://www.crexi.com/web/site-map/" target="_self">Site Map</a>
+    </div>
+</div>
