@@ -22,8 +22,7 @@ user profile page (route: `/profile`)
 
 ## Instructions:
 
-Fork this repo and complete the following tasks. *Please do not spend more than 2 hours on this project.* If you only finish
-one task in that time, that is ok. Please submit a pull request with your work once finished.
+Fork this repo and complete the following tasks. *Please do not spend more than 2 hours on this project.* Please submit a pull request with your work once finished.
 
 ### Task #1
 
