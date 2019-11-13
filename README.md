@@ -40,4 +40,4 @@ to create a service to pull in a random user and populate the profile page. You 
 ### Task #2
 
 Create a new page, a profile list. Pull in 10 random profiles to populate this list, and make each profile list item
-clickable, sending the user to a user details page with that user data.
+clickable, sending the user to a user details page with that user data. The UI is up to you, although it is reccomended to use Angular Material components
