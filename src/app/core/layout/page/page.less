@@ -6,11 +6,16 @@
 }
 
 .page-wrapper {
+    background-color: @background-light-gray;
     min-height: calc(100vh - @headerHeight + 1px);
     position: relative;
     overflow: auto;
     transition: opacity .25s ease-in;
     opacity: 1;
+    &.with-background {
+        background: url(/content/img/Los-Angeles-1600.jpg) no-repeat center;
+        background-size: cover;
+    }
 }
 
 :host-context(.loading) .page-wrapper {

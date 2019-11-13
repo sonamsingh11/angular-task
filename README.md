@@ -4,24 +4,40 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. Navigate to `http://localhost:8888/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Available routes:
+home page (default route: `/`)
+user profile page (route: `/profile`)
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+# Assignment details
 
-## Further help
+## Instructions:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Fork this repo and complete the following tasks. *Please do not spend more than 2 hours on this project.* If you only finish
+one task in that time, that is ok. Please submit a pull request with your work once finished.
+
+### Task #1
+
+The user profile page is currently static with dummy data. Use the public API at [Random User Generator](https://randomuser.me/)
+to create a service to pull in a random user and populate the profile page. You should replace the following data points:
+
+* First and Last Name
+* Profile picture
+* Phone number, including cell
+* City and State
+* Email address
+* Date of Birth
+
+### Task #2
+
+Create a new page, a profile list. Pull in 10 random profiles to populate this list, and make each profile list item
+clickable, sending the user to a user details page with that user data.

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { LayoutModule } from '@core/layout/layout.module';
 import { HomePageComponent } from './home-page';
+import { ProfileModule } from './profile/profile.module';
 
 @NgModule({
     declarations: [
@@ -13,7 +14,8 @@ import { HomePageComponent } from './home-page';
         HomePageComponent
     ],
     imports: [
-        LayoutModule
+        LayoutModule,
+        ProfileModule
     ]
 })
 export class FeaturesModule { }

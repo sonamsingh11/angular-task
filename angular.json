@@ -24,10 +24,10 @@
             "tsConfig": "tsconfig.app.json",
             "aot": false,
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              "src/content"
             ],
             "styles": [
+              "src/custom-theme.scss",
               "src/styles.less"
             ],
             "stylePreprocessorOptions": {
