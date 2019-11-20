@@ -31,4 +31,4 @@ The user profile page is currently loaded with dummy data. Use the public API at
 to create a service to pull in a random user and populate the profile page. You should get the relevant data from the API to fill a `ProfileStore`.
 
 Create a new page, a profile list. Pull in 10 random profiles to populate this list, and make each profile list item
-clickable, sending the user to a user details page with that user data. The UI is up to you, although it is reccomended to use Angular Material components
+clickable, sending the user to a user details page with that user data. The UI is up to you, although it is recommended to use Angular Material components
