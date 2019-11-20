@@ -15,7 +15,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
 ## Available routes:
-home page (default route: `/`)
+home page (default route: `/`)    
 user profile page (route: `/profile`)
 
 # Assignment details
