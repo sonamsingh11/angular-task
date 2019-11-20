@@ -22,22 +22,13 @@ user profile page (route: `/profile`)
 
 ## Instructions:
 
-Fork this repo and complete the following tasks. *Please do not spend more than 2 hours on this project.* If you only finish
-one task in that time, that is ok. Please submit a pull request with your work once finished.
+Fork this repo and complete the following task. *Please do not spend more than 2 hours on this project.* Please submit a pull request with your work once finished.
 
-### Task #1
+### Task
+Use ngrx and create or modify appropriate actions, reducers, and selectors.
 
-The user profile page is currently static with dummy data. Use the public API at [Random User Generator](https://randomuser.me/)
-to create a service to pull in a random user and populate the profile page. You should replace the following data points:
-
-* First and Last Name
-* Profile picture
-* Phone number, including cell
-* City and State
-* Email address
-* Date of Birth
-
-### Task #2
+The user profile page is currently loaded with dummy data. Use the public API at [Random User Generator](https://randomuser.me/)
+to create a service to pull in a random user and populate the profile page. You should get the relevant data from the API to fill a `ProfileStore`.
 
 Create a new page, a profile list. Pull in 10 random profiles to populate this list, and make each profile list item
 clickable, sending the user to a user details page with that user data.
