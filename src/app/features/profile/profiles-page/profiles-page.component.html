@@ -1,0 +1,14 @@
+<crx-page>
+    <div class="header">
+        <crx-header pageTitle="Profiles"></crx-header>
+    </div>
+    <ng-container *ngFor="let user of users">
+        <mat-card class="card" *ngIf="user" (click)="goToDetails(user)">
+            <mat-card-title-group>
+                <mat-card-title>User Profile</mat-card-title>
+                <mat-card-subtitle>{{ user?.name?.first }} {{ user?.name?.last }}</mat-card-subtitle>
+                <img class="circle" mat-card-md-image [src]="user?.picture?.thumbnail" />
+            </mat-card-title-group>
+        </mat-card>
+    </ng-container>
+</crx-page>
