@@ -7,16 +7,23 @@ import { LayoutModule } from '@core/layout/layout.module';
 import { StoreModule } from '@ngrx/store';
 import { ProfileDetailComponent } from './profile-detail';
 import { getProfileReducer } from './store/profile.reducers';
+import { EffectsModule } from '@ngrx/effects';
+import { ProfileEffects } from './store/profile.effects';
+import { ProfilesComponent } from './profiles-page/profiles-page.component';
+import { ProfileService } from './profile.service';
 
 @NgModule({
     declarations: [
-        ProfileDetailComponent
+        ProfileDetailComponent,
+        ProfilesComponent
     ],
     entryComponents: [
-        ProfileDetailComponent
+        ProfileDetailComponent,
+        ProfilesComponent
     ],
     exports: [
-        ProfileDetailComponent
+        ProfileDetailComponent,
+        ProfilesComponent
     ],
     imports: [
         CommonModule,
@@ -24,7 +31,9 @@ import { getProfileReducer } from './store/profile.reducers';
         MatCardModule,
         MatDividerModule,
         MatListModule,
+        EffectsModule.forRoot([ProfileEffects]),
         StoreModule.forFeature('profile', getProfileReducer)
-    ]
+    ],
+    providers: [ProfileService]
 })
 export class ProfileModule { }
