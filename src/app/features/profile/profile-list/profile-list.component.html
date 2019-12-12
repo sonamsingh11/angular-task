@@ -1,0 +1,53 @@
+<crx-page>
+    <div class="header">
+        <crx-header pageTitle="Profile List"></crx-header>
+    </div>
+    <section class="list-body">
+        <section *ngIf="!listLoaded" fxLayout="row" fxLayoutAlign="center">
+            <mat-spinner></mat-spinner>
+        </section>
+
+        <section
+            *ngIf="listLoaded"
+            fxFlex="90"
+            fxLayout="row row-wrap"
+            fxLayoutAlign="center center"
+            class="card-list"
+        >
+            <mat-card
+                *ngFor="let profile of profileList"
+                fxFlex="15"
+                fxFlex.lt-lg="20"
+                fxFlex.lt-md="25"
+                fxFlex.lt-sm="40"
+                fxFlex.lt-sm="50"
+                (click)="viewProfile(profile)"
+            >
+                <mat-card-header fxLayoutAlign="center">
+                    <mat-card-title>{{ profile.firstName }} </mat-card-title>
+                    <mat-card-subtitle>
+                        {{ profile.lastName }}
+                    </mat-card-subtitle>
+                </mat-card-header>
+                <img mat-card-image src="{{ profile.picture }}" />
+                <mat-card-actions fxLayoutAlign="center">
+                    <button
+                        mat-flat-button
+                        color="primary"
+                        (click)="viewProfile(profile)"
+                    >
+                        View Profile
+                    </button>
+                </mat-card-actions>
+            </mat-card>
+            <button
+                mat-raised-button
+                color="default"
+                fxFlex="50"
+                (click)="refreshList()"
+            >
+                Refresh List
+            </button>
+        </section>
+    </section>
+</crx-page>
