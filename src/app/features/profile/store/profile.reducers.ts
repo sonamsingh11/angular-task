@@ -19,14 +19,17 @@ const initialState: ProfileState = {};
 
 const reducer = createReducer(
     initialState,
-    on(profileActions.initProfile, (state, { profile }) => {
-        console.log(profile);
+    on(profileActions.initProfile, (state) => {
+        return { ...state, user: dummyProfile };
+    }),
+    on(profileActions.setProfile, (state, { profile }) => {
         if (profile === null) {
             return { ...state, user: dummyProfile };
         }
 
         return { ...state, user: profile };
     })
+
 );
 
 // tslint:disable only-arrow-functions

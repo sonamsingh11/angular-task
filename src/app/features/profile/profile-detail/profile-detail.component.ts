@@ -23,7 +23,7 @@ export class ProfileDetailComponent implements OnInit {
         this.user$.pipe(first()).subscribe((data: UserProfile) => {
             if (!data) {
                 this.store.dispatch(
-                    profileActions.initProfile({ profile: null })
+                    profileActions.initProfile()
                 );
             }
         });

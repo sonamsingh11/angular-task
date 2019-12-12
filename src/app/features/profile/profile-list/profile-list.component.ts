@@ -44,7 +44,7 @@ export class ProfileListComponent implements OnInit {
     }
 
     viewProfile(data: UserProfile) {
-        this.store.dispatch(profileActions.initProfile({ profile: data }));
+        this.store.dispatch(profileActions.setProfile({ profile: data }));
         this.router.navigate([`/profile`]);
     }
 
