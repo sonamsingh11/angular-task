@@ -1,0 +1,14 @@
+<crx-page>
+    <div class="header">
+        <crx-header pageTitle="Profile List"></crx-header>
+    </div>
+    <div *ngIf="error$ | async as errorMessage">
+        {{ errorMessage }}
+    </div>
+    <mat-nav-list>
+        <mat-list-item *ngFor="let user of (users$ | async)">
+            <mat-icon>person</mat-icon>
+            <a matLine (click)="handleClick(user)">{{ user.firstName + ' ' + user.lastName }}</a>
+        </mat-list-item>
+      </mat-nav-list>
+</crx-page>
