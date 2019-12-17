@@ -2,6 +2,9 @@
     <div class="header">
         <crx-header pageTitle="Profile Details"></crx-header>
     </div>
+    <div *ngIf="error$ | async as errorMessage">
+        {{ errorMessage }}
+    </div>
     <mat-card *ngIf="user$ | async as user" class="card">
         <mat-card-title-group>
             <mat-card-title>User Profile</mat-card-title>

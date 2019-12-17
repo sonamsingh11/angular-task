@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { profileActions } from '@store/actions';
 import { AppState } from '@store/reducers';
-import { getUserProfile } from '@store/selectors';
+import { getUserProfile, getUserError } from '@store/selectors';
 
 @Component({
     selector: 'app-profile-detail',
@@ -12,13 +11,11 @@ import { getUserProfile } from '@store/selectors';
 export class ProfileDetailComponent implements OnInit {
 
     user$ = this.store.select(getUserProfile);
+    error$ = this.store.select(getUserError);
 
     constructor (private store: Store<AppState>) {}
 
     ngOnInit () {
-
-        this.store.dispatch(profileActions.initProfile());
-
     }
 
 }

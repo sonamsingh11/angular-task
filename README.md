@@ -34,3 +34,24 @@ to pull in a random user and populate the profile page. You should get the relev
 2. Create a new page, a profile list. Pull in 10 random profiles to populate this list, storing them in the state, and make each profile list item clickable, sending the user to a user details page with that user data. The user profile page route should be adjusted to take an optional id param, which if missing will show a random user (step 1)
 
 The UI is up to you, although it is recommended to use Angular Material components. 
+
+
+# Candidate Matt Irwin Responses
+
+Initial readthrough...
+
+---
+
+I did give myself a NGRX crash course yesterday but still had to do a lot of reading and theory is not practice...
+
+For sure I don't fully understand ngrx yet but figured out hooking services through effects(?) at least in a rough way.  My rough plan:
+
+    1. Before messing with NGRX - make a standard service to randomuser API and verify
+    2. Figure out how to feed this service into the current ngrx store and profile
+    3. Make the new profile list page
+    4. update service/store for new page as needed
+    5. send list page link to profile page
+
+## Final thoughts
+
+Got this to work, but have more to learn.  As I was coming to a close I was trying to figure out how to have the profile detail page load from the service if it hadn't been loaded from data in the list.  Some googling turned up this can be done through the service or the effects side (with opinions on both) but ran out of time.  Think I would have tried the service path as it seemed easier and more maintainable. 
