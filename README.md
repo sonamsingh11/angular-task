@@ -15,7 +15,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
 ## Available routes:
-home page (default route: `/`)    
+home page (default route: `/`)
 user profile page (route: `/profile`)
 
 # Assignment details
@@ -25,7 +25,7 @@ user profile page (route: `/profile`)
 Fork this repo and complete the following task. *Please do not spend more than 2 hours on this project.* Please submit a pull request with your work once finished.
 
 ### Task
-One of the goals of this task is to measure your understanding of ngrx and the redux pattern.  
+One of the goals of this task is to measure your understanding of ngrx and the redux pattern.
 Use ngrx and create or modify appropriate actions, reducers, and selectors.
 
 1. The user profile page is currently loaded with dummy data. Use the public API at [Random User Generator](https://randomuser.me/)
@@ -33,7 +33,7 @@ to pull in a random user and populate the profile page. You should get the relev
 
 2. Create a new page, a profile list. Pull in 10 random profiles to populate this list, storing them in the state, and make each profile list item clickable, sending the user to a user details page with that user data. The user profile page route should be adjusted to take an optional id param, which if missing will show a random user (step 1)
 
-The UI is up to you, although it is recommended to use Angular Material components. 
+The UI is up to you, although it is recommended to use Angular Material components.
 
 
 # Candidate Matt Irwin Responses
@@ -54,4 +54,4 @@ For sure I don't fully understand ngrx yet but figured out hooking services thro
 
 ## Final thoughts
 
-Got this to work, but have more to learn.  As I was coming to a close I was trying to figure out how to have the profile detail page load from the service if it hadn't been loaded from data in the list.  Some googling turned up this can be done through the service or the effects side (with opinions on both) but ran out of time.  Think I would have tried the service path as it seemed easier and more maintainable. 
+Got this to work, but have more to learn.  As I was coming to a close I was trying to figure out how to have the profile detail page load from the service if it hadn't been loaded from data in the list.  Some googling turned up this can be done through the service or the effects side (with opinions on both) but ran out of time.  Think I would have tried the service path as it seemed easier and more maintainable.
