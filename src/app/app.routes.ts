@@ -1,6 +1,8 @@
 import { Routes } from '@angular/router';
 import { PageNotFoundComponent } from '@core/layout/page-not-found';
 import { HomePageComponent } from '@features/home-page';
+import { ProfilesComponent } from '@features/profiles';
+
 import { ProfileDetailComponent } from '@features/profile/profile-detail';
 
 export const appRoutes: Routes = [
@@ -23,5 +25,10 @@ export const appRoutes: Routes = [
         data: { name: 'pageNotFound' },
         path: '**',
         redirectTo: '/404'
+    },
+    {
+    component: ProfilesComponent,
+        path: 'profiles',
+        data: { name: 'profiles'}
     }
 ];
