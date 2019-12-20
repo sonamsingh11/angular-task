@@ -1,0 +1,34 @@
+<crx-page>
+    <div class="header">
+        <crx-header pageTitle="User Profile"></crx-header>
+    </div>
+    <mat-card class="card">
+        <mat-card-title-group>
+            <mat-card-title>User Profiles</mat-card-title>
+        </mat-card-title-group>
+        <mat-card-content>
+
+			<table class="table table-hover">
+			<thead class="thead-dark">
+				<tr>
+				<th scope="col">#</th>
+				<th scope="col">Name</th>
+				<th scope="col">Location</th>
+				<th scope="col">Email</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr *ngFor="let user of users"
+				(click)="navigateToUser(user.id)">
+				<td>{{ user.id }}</td>
+				<td>{{ user.firstName }} {{user.lastName}}</td>
+				<td>{{ user.city }}, {{user.state}}</td>
+				<td>{{ user.email }}</td>
+				</tr>
+			</tbody>
+			</table>
+
+        </mat-card-content>
+	</mat-card>
+	<crx-footer></crx-footer>
+</crx-page>
