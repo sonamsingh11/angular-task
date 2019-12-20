@@ -1,7 +1,7 @@
 
 2019.12.19
 
-1.	Crexi angular-test, done by Vitaly Radkovski
+1.	Crexi angular-test, done by VR
 
 2.	Following conditions from the test were implemented:
 
