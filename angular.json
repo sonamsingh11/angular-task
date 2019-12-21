@@ -24,9 +24,11 @@
             "tsConfig": "tsconfig.app.json",
             "aot": false,
             "assets": [
-              "src/content"
+              "src/content",
+              "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.css",
               "src/custom-theme.scss",
               "src/styles.less"
             ],

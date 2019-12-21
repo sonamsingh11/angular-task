@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+  
 @Component({
     selector: 'app-root',
     styleUrls: ['./app.component.less'],
@@ -8,5 +9,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
     title = 'angular-task';
+
+  	ngOnInit() {
+  	}
 
 }
